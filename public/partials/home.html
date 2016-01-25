@@ -1,0 +1,25 @@
+<h1>Home Page</h1>
+<p>
+	<a href="/#/add-video">Add a Video</a>
+</p>
+<div class='table-responsive'>
+	<table class='table table-bordered'>
+	    <tr ng-repeat='video in videos'>
+			<td>
+				{{video.title}}
+			</td>
+			<td>
+				{{video.description}}
+			</td>
+			<td class='options'>
+				<a href="/#/video/{{video._id}}">
+					Edit
+				</a>
+				 | 
+				<a href="/#/video/delete/{{video._id}}">
+					Delete
+				</a>
+			</td>
+		</tr>
+	</table>
+</div>
